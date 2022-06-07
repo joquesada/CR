@@ -1,0 +1,15 @@
+---
+hosts:
+{%- for x in range(1, 41) %}
+{%- if x in range(1, 10) %}
+  - host: n9k0{{x}}-{{ROLE}}-{{LOCATION}}
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+{%- else %}
+  - host: n9k{{x}}-{{ROLE}}-{{LOCATION}}
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+{%- endif %}
+{% endfor %}

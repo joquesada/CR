@@ -1,0 +1,11 @@
+---
+hosts:
+  - host: 10.10.10.10
+    device_type: cisco_nxos_ssh
+    username: admin
+    password: VMware1!
+
+  - host: 10.10.10.11
+    device_type: cisco_nxos_ssh
+    username: admin
+    password: VMware1!

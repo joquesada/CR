@@ -1,0 +1,8 @@
+
+
+from netmiko import ConnectHandler
+import getpass
+command1 =  input("Enter the command you want to display:")
+
+def get_command1(dev):
+   if dev =  

@@ -1,0 +1,21 @@
+---
+hosts:
+  - host: n9k01-leaf-sjc31
+    device_type: cisco_nxos_ssh
+    username:
+    password:
+
+  - host: n9k02-leaf-sjc31
+    device_type: cisco_nxos_ssh
+    username:
+    password:
+
+  - host: n9k03-leaf-sjc31
+    device_type: cisco_nxos_ssh
+    username:
+    password:
+
+  - host: n9k04-leaf-sjc31
+    device_type: cisco_nxos_ssh
+    username:
+    password:

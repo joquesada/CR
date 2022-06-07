@@ -1,0 +1,126 @@
+
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2021, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+
+n9k04-leaf-sjc31# terminal width 511
+
+n9k04-leaf-sjc31#tterminal lngth 0
+n
+n9k04-leaf-sjc31
+
+n9k03-leaf-sjc31# 
+n9k03-leaf-sjc31# 
+n9k03-leaf-sjc31# 
+n9k03-leaf-sjc31# sh version | json
+{"header_str": "Cisco Nexus Operating System (NX-OS) Software\nTAC support: http://www.cisco.com/tac\nCopyright (C) 2002-2021, Cisco and/or its affiliates.\nAll rights reserved.\nThe copyrights to certain works contained in this software are\nowned by other third parties and used and distributed under their own\nlicenses, such as open source.  This software is provided \"as is,\" and unless\notherwise stated, there is no warranty, express or implied, including but not\nlimited to warranties of merchantability and fitness for a particular purpose.\nCertain components of this software are licensed under\nthe GNU General Public License (GPL) version 2.0 or \nGNU General Public License (GPL) version 3.0  or the GNU\nLesser General Public License (LGPL) Version 2.1 or \nLesser General Public License (LGPL) Version 2.0. \nA copy of each such license is available at\nhttp://www.opensource.org/licenses/gpl-2.0.php and\nhttp://opensource.org/licenses/gpl-3.0.html and\nhttp://www.opensource.org/licenses/lgpl-2.1.php and\nhttp://www.gnu.org/licenses/old-licenses/library.txt.", "bios_ver_str": "05.44", "kickstart_ver_str": "9.3(8)", "nxos_ver_str": "9.3(8)", "bios_cmpl_time": "04/02/2021", "kick_file_name": "bootflash:///nxos.9.3.8.bin", "nxos_file_name": "bootflash:///nxos.9.3.8.bin", "kick_cmpl_time": "8/4/2021 13:00:00", "nxos_cmpl_time": "8/4/2021 13:00:00", "kick_tmstmp": "08/04/2021 15:25:26", "nxos_tmstmp": "08/04/2021 15:25:26", "chassis_id": "Nexus9000 C93240YC-FX2 Chassis", "cpu_name": "Intel(R) Xeon(R) CPU D-1526 @ 1.80GHz", "memory": "24570056", "mem_type": "kB", "proc_board_id": "FDO250702FA", "host_name": "n9k03-leaf-sjc31", "bootflash_size": "115805708", "kern_uptm_days": "183", "kern_uptm_hrs": "21", "kern_uptm_mins": "25", "kern_uptm_secs": "46", "rr_usecs": "294527", "rr_ctime": "Sun Oct 10 19:57:43 2021", "rr_reason": "Reset due to upgrade", "rr_sys_ver": "9.3(5)", "rr_service": null, "plugins": "Core Plugin, Ethernet Plugin", "manufacturer": "Cisco Systems, Inc.", "TABLE_package_list": {"ROW_package_list": {"package_id": null}}}
+
+n9k03-leaf-sjc31# 
+n9k03-leaf-sjc31# 
+
+n9k03-leaf-sjc31# 
+n9k03-leaf-sjc31# sh ip int br vrf all | json-pretty
+{
+    "TABLE_intf": {
+        "ROW_intf": [
+            {
+                "vrf-name-out": "default", 
+                "intf-name": "Lo0", 
+                "proto-state": "up", 
+                "link-state": "up", 
+                "admin-state": "up", 
+                "iod": "67", 
+                "prefix": "10.166.155.13", 
+                "ip-disabled": "FALSE"
+            }, 
+            {
+                "vrf-name-out": "default", 
+                "intf-name": "Lo1", 
+                "proto-state": "up", 
+                "link-state": "up", 
+                "admin-state": "up", 
+                "iod": "68", 
+                "prefix": "10.166.155.53", 
+                "ip-disabled": "FALSE"
+            }, 
+            {
+                "vrf-name-out": "default", 
+                "intf-name": "Eth1/49", 
+                "proto-state": "up", 
+                "link-state": "up", 
+                "admin-state": "up", 
+                "iod": "53", 
+                "prefix": "10.166.156.16", 
+                "ip-disabled": "FALSE"
+            }, 
+            {
+                "vrf-name-out": "default", 
+                "intf-name": "Eth1/50", 
+                "proto-state": "down", 
+                "link-state": "down", 
+                "admin-state": "up", 
+                "iod": "54", 
+                "prefix": "10.166.156.20", 
+                "ip-disabled": "FALSE"
+            }, 
+            {
+                "vrf-name-out": "default", 
+                "intf-name": "Eth1/55", 
+                "proto-state": "up", 
+                "link-state": "up", 
+                "admin-state": "up", 
+                "iod": "59", 
+                "prefix": "10.166.156.18", 
+                "ip-disabled": "FALSE"
+            }, 
+            {
+                "vrf-name-out": "default", 
+                "intf-name": "Eth1/56", 
+                "proto-state": "up", 
+                "link-state": "up", 
+                "admin-state": "up", 
+                "iod": "60", 
+                "prefix": "10.166.156.22", 
+                "ip-disabled": "FALSE"
+            }, 
+            {
+                "vrf-name-out": "management", 
+                "intf-name": "mgmt0", 
+                "proto-state": "up", 
+                "link-state": "up", 
+                "admin-state": "up", 
+                "iod": "2", 
+                "prefix": "10.166.80.39", 
+                "ip-disabled": "FALSE"
+            }, 
+            {
+                "vrf-name-out": "ENG", 
+                "intf-name": "Vlan93", 
+                "proto-state": "up", 
+                "link-state": "up", 
+                "admin-state": "up", 
+                "iod": "71", 
+                "ip-disabled": "FALSE"
+            }
+        ]
+    
+n9k
+n9k03-leaf-sjc
+n9k
+n9k03-leaf-sjcexitexit

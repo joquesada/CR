@@ -1,0 +1,40 @@
+---
+hosts:
+{%- for x in range(1, 31) %}
+{%- if x in range(1, 10) %}
+  - host: n9k0{{x}}-{{ROLE}}-{{LOCATION}}
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+{%- else %}
+  - host: n9k{{x}}-{{ROLE}}-{{LOCATION}}
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+{%- endif %}
+{% endfor %}
+{%- for x in range(1, 11) %}
+{%- if x in range(1, 10) %}
+  - host: n5k0{{x}}-{{LOCATION}}
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+{%- else %}
+  - host: n5k{{x}}-{{LOCATION}}
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+{%- endif %}
+{% endfor %}
+{%- for x in range(1, 3) %}
+  - host: n9k0{{x}}-{{BLROLE}}-{{LOCATION}}
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+{% endfor %}
+{%- for x in range(1, 3) %}
+  - host: n9k0{{x}}-{{SPINEROLE}}-{{LOCATION}}
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+{% endfor %}

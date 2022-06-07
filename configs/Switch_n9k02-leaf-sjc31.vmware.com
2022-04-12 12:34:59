@@ -1,0 +1,640 @@
+
+!Command: show running-config
+!Running configuration last done at: Fri Apr  8 14:45:46 2022
+!Time: Tue Apr 12 11:35:11 2022
+
+version 9.3(8) Bios:version 05.44 
+hostname n9k02-leaf-sjc31
+policy-map type network-qos MTU
+  class type network-qos class-default
+    mtu 9216
+policy-map type network-qos dpp
+  class type network-qos c-8q-nq-default
+    dpp set-qos-group 7
+    mtu 1500
+vdc n9k02-leaf-sjc31 id 1
+  limit-resource vlan minimum 16 maximum 4094
+  limit-resource vrf minimum 2 maximum 4096
+  limit-resource port-channel minimum 0 maximum 511
+  limit-resource u4route-mem minimum 248 maximum 248
+  limit-resource u6route-mem minimum 96 maximum 96
+  limit-resource m4route-mem minimum 58 maximum 58
+  limit-resource m6route-mem minimum 8 maximum 8
+
+feature bash-shell
+feature scp-server
+cfs eth distribute
+nv overlay evpn
+feature ospf
+feature bgp
+feature pim
+feature udld
+feature interface-vlan
+feature vn-segment-vlan-based
+feature lacp
+feature dhcp
+feature vpc
+feature lldp
+clock timezone PST -8 0
+clock summer-time PST 2 Sun Mar 02:00 1 Sun Nov 02:00 60
+feature sla sender
+feature nv overlay
+feature ngoam
+
+logging level l2fm 5
+logging level radius 7
+logging level vpc 6
+no password strength-check
+username admin password 5 $5$DPNCIH$EHuAtHXtIwOUx7u3gxEIfv1BeoBx.MYJllKr36Zfgk5  role network-admin
+
+banner motd ^
+********************************************************************************
+*                          Welcome to Nexus N9K-C93240YC-FX2                   *
+*                              Hostname n9k02-leaf-sjc31                       *
+*                            Physical location SC1-G03-U49-50                  *
+*                                                                              *
+*           This is a private system operated for and by VMWare Inc.           *
+*   Authorization from VMWare Inc. management is required to use this system.  *
+*                   Use by unauthorized persons is prohibited.                 *
+********************************************************************************
+^
+
+no ip domain-lookup
+ip domain-name vmware.com
+radius-server key 7 "122F280046195F"
+radius-server host 10.113.12.78 key 7 "YIa4j3" authentication accounting 
+radius-server host 10.128.153.226 key 7 "YIa4j3" authentication accounting 
+aaa group server radius RADIUS-ISE 
+    server 10.113.12.78 
+    server 10.128.153.226 
+    use-vrf management
+    source-interface mgmt0
+ip access-list 70
+  5 permit ip 10.253.0.0/16 any 
+  10 permit ip 10.17.0.0/23 any 
+  15 permit ip 10.188.245.143/32 any 
+  20 permit ip 10.17.9.0/24 any 
+  30 permit ip 10.113.60.5/32 any 
+  40 permit ip 10.113.60.9/32 any 
+  50 permit ip 10.113.60.157/32 any 
+  60 permit ip 10.113.161.221/32 any 
+  70 permit ip 10.128.153.23/32 any 
+  80 permit ip 10.112.236.7/32 any 
+  90 permit ip 10.16.142.14/32 any 
+  100 permit ip 10.33.38.43/32 any 
+  110 permit ip 10.132.7.81/32 any 
+  120 permit ip 10.111.0.33/32 any 
+  130 permit ip 10.112.0.23/32 any 
+  140 permit ip 10.23.108.38/32 any 
+  150 permit ip 10.132.7.0/32 any 
+  160 permit ip 10.132.71.0/24 any 
+  170 deny ip any any log 
+ip access-list 99
+  5 permit ip 10.253.0.0/16 any 
+  10 permit ip 10.113.60.5/32 any 
+  20 permit ip 10.113.60.9/32 any 
+  30 permit ip 10.113.60.157/32 any 
+  40 permit ip 10.26.178.0/24 any 
+  50 permit ip 10.26.179.0/24 any 
+  60 permit ip 10.26.166.32/27 any 
+  70 permit ip 10.23.88.0/24 any 
+  80 permit ip 10.23.225.224/28 any 
+  90 permit ip 10.112.106.192/26 any 
+  100 permit ip 10.112.240.0/24 any 
+  110 permit ip 10.17.0.0/23 any 
+  120 permit ip 10.17.9.0/24 any 
+  130 permit ip 10.17.6.178/32 any 
+  140 permit ip 10.132.7.239/32 any 
+  150 permit ip 10.112.64.47/32 any 
+  151 permit ip 10.188.122.142/32 any 
+  160 deny ip any any log 
+system qos
+  service-policy type network-qos MTU
+copp profile strict
+snmp-server contact net-dcmetro@vmware.com
+snmp-server location US,SC2
+snmp-server source-interface traps mgmt0
+snmp-server source-interface informs mgmt0
+snmp-server user admin network-admin auth md5 0x87e4ec07c41e7548353fe8a8bd58a1d1 priv 0x87e4ec07c41e7548353fe8a8bd58a1d1 localizedkey
+snmp-server host 10.253.4.5 traps version 1 G00d9a55w0rd9vmw9r3
+snmp-server host 10.253.4.5 use-vrf management
+snmp-server host 10.253.1.10 traps version 2c G00d9a55w0rd9vmw9r3
+snmp-server host 10.253.1.10 use-vrf management
+snmp-server host 10.253.4.200 traps version 2c G00d9a55w0rd9vmw9r3
+snmp-server host 10.253.4.200 use-vrf management
+snmp-server host 10.253.4.12 traps version 2c G00d9a55w0rd9vmw9r3
+snmp-server host 10.253.4.12 use-vrf management
+snmp-server host 10.253.1.19 traps version 1 G00d9a55w0rd9vmw9r3
+snmp-server host 10.253.1.61 traps version 2c G00d9a55w0rd9vmw9r3
+snmp-server host 10.253.1.61 use-vrf management
+rmon event 1 log trap public description FATAL(1) owner PMON@FATAL
+rmon event 2 log trap public description CRITICAL(2) owner PMON@CRITICAL
+rmon event 3 log trap public description ERROR(3) owner PMON@ERROR
+rmon event 4 log trap public description WARNING(4) owner PMON@WARNING
+rmon event 5 log trap public description INFORMATION(5) owner PMON@INFO
+snmp-server enable traps bgp
+snmp-server enable traps ospf
+no snmp-server enable traps entity entity_mib_change
+no snmp-server enable traps entity entity_module_status_change
+no snmp-server enable traps entity entity_power_status_change
+no snmp-server enable traps entity entity_module_inserted
+no snmp-server enable traps entity entity_module_removed
+no snmp-server enable traps entity entity_unrecognised_module
+no snmp-server enable traps entity entity_fan_status_change
+no snmp-server enable traps entity entity_power_out_change
+no snmp-server enable traps link linkDown
+no snmp-server enable traps link linkUp
+no snmp-server enable traps link extended-linkDown
+no snmp-server enable traps link extended-linkUp
+no snmp-server enable traps link cieLinkDown
+no snmp-server enable traps link cieLinkUp
+no snmp-server enable traps link delayed-link-state-change
+snmp-server enable traps callhome event-notify
+snmp-server enable traps callhome smtp-send-fail
+snmp-server enable traps cfs state-change-notif
+snmp-server enable traps cfs merge-failure
+no snmp-server enable traps rf redundancy_framework
+snmp-server enable traps aaa server-state-change
+no snmp-server enable traps license notify-license-expiry
+no snmp-server enable traps license notify-no-license-for-feature
+no snmp-server enable traps license notify-licensefile-missing
+no snmp-server enable traps license notify-license-expiry-warning
+no snmp-server enable traps upgrade UpgradeOpNotifyOnCompletion
+no snmp-server enable traps upgrade UpgradeJobStatusNotify
+snmp-server enable traps feature-control FeatureOpStatusChange
+snmp-server enable traps sysmgr cseFailSwCoreNotifyExtended
+no snmp-server enable traps rmon risingAlarm
+no snmp-server enable traps rmon fallingAlarm
+no snmp-server enable traps rmon hcRisingAlarm
+no snmp-server enable traps rmon hcFallingAlarm
+snmp-server enable traps config ccmCLIRunningConfigChanged
+snmp-server enable traps snmp authentication
+snmp-server enable traps link cisco-xcvr-mon-status-chg
+snmp-server enable traps vtp notifs
+snmp-server enable traps vtp vlancreate
+snmp-server enable traps vtp vlandelete
+snmp-server enable traps bridge newroot
+snmp-server enable traps bridge topologychange
+snmp-server enable traps stpx inconsistency
+snmp-server enable traps stpx root-inconsistency
+snmp-server enable traps stpx loop-inconsistency
+no snmp-server enable traps entity entity_sensor
+no snmp-server enable traps entity cefcMIBEnableStatusNotification
+no snmp-server enable traps generic coldStart
+no snmp-server enable traps generic warmStart
+snmp-server enable traps feature-control ciscoFeatOpStatusChange
+no snmp-server enable traps storm-control cpscEventRev1
+no snmp-server enable traps link cErrDisableInterfaceEventRev1
+snmp-server counter cache timeout 10
+snmp-server community G00d9a55w0rd9vmw9r3 group network-operator
+snmp-server community b35t9a55w0rd9vmw9r3 group network-admin
+snmp-server community G00d9a55w0rd9vmw9r3 use-acl 70
+snmp-server community b35t9a55w0rd9vmw9r3 use-acl 70
+ntp server 10.113.15.158 prefer use-vrf management
+ntp server 10.113.60.176 use-vrf management
+ntp source-interface mgmt0
+ntp logging
+aaa authentication login default group RADIUS-ISE 
+aaa authentication login console local 
+
+fabric forwarding anycast-gateway-mac 6666.6666.6666
+ip pim rp-address 10.166.155.200 group-list 239.0.0.0/8
+ip pim ssm range 232.0.0.0/8
+vlan 1,10-14,18-20,93,116,124-131,148,431,3050-3052,3061-3062,3091-3094
+vlan 1
+  vn-segment 1001
+vlan 10
+  name TechOps_footprint_management
+  vn-segment 10010
+vlan 11
+  name TechOps_footprint_data
+  vn-segment 10011
+vlan 12
+  name TechOps_Hosted_Isiloopbackn_NFS
+  vn-segment 10012
+vlan 13
+  name TechOps_Hosted_VNX_NFS
+  vn-segment 10013
+vlan 14
+  name TechOps_Hosted_management
+  vn-segment 10014
+vlan 18
+  name TechOps_Hosted_OOB_data
+  vn-segment 10018
+vlan 19
+  name SCDC1-Transport-VLAN-N6K-to-F5
+  vn-segment 10019
+vlan 20
+  name SCDC1-New-Domain-Controller
+  vn-segment 10020
+vlan 93
+  name L3VNI-ENG
+  vn-segment 9393
+vlan 116
+  name echOps_Hosted_Customer_Data
+  vn-segment 100116
+vlan 124
+  name TechOps_Labs_monitoring
+  vn-segment 100124
+vlan 125
+  name echops_Network_Management
+  vn-segment 100125
+vlan 126
+  name LM_Management
+  vn-segment 100126
+vlan 127
+  name LM_VM_Network
+  vn-segment 100127
+vlan 128
+  name DW_Management
+  vn-segment 100128
+vlan 129
+  name DW_VM_Network
+  vn-segment 100129
+vlan 130
+  name DW_Storage_Network
+  vn-segment 100130
+vlan 131
+  name SCDC_78K_Replication
+  vn-segment 100131
+vlan 148
+  name scdc1-evo-mgmt
+  vn-segment 100148
+vlan 431
+  name EDW_WAN_Network
+  vn-segment 100431
+vlan 3050
+  name TechOps_B22_VMotion
+  vn-segment 1003050
+vlan 3051
+  name ALM_Vmotion
+  vn-segment 1003051
+vlan 3052
+  name EDW_Vmotion
+  vn-segment 1003052
+vlan 3061
+  name Private-EVO-vSAN
+  vn-segment 1003061
+vlan 3062
+  name Private-EVO-vMotion
+  vn-segment 1003062
+vlan 3091
+  name LOCAL-FP-vSAN
+  vn-segment 1003091
+vlan 3092
+  name LOCAL-FP-vMotion
+  vn-segment 1003092
+vlan 3093
+  name LOCAL-FP-vSAN-2
+  vn-segment 1003093
+vlan 3094
+  name LOCAL-FP-vMotion-2
+  vn-segment 1003094
+
+spanning-tree port type edge default
+spanning-tree port type edge bpduguard default
+ip prefix-list /32 seq 5 permit 0.0.0.0/0 ge 32 
+ip prefix-list CONNECTED seq 4 deny 172.16.0.0/16 le 32 
+ip prefix-list CONNECTED seq 5 permit 0.0.0.0/0 le 32 
+route-map /32 permit 5
+  match ip address prefix-list /32 
+route-map CONNECTED permit 9
+  match tag 999 
+  set community 65181:999 
+route-map CONNECTED permit 10
+  match ip address prefix-list CONNECTED 
+service dhcp
+ip dhcp relay
+ipv6 dhcp relay
+vrf context ENG
+  vni 9393
+  rd 10.166.155.52:93
+  address-family ipv4 unicast
+    route-target both auto
+    route-target both auto evpn
+  address-family ipv6 unicast
+    route-target both auto
+    route-target both auto evpn
+vrf context management
+  ip route 0.0.0.0/0 10.166.83.253
+vpc domain 101
+  peer-switch
+  role priority 100
+  peer-keepalive destination 10.166.80.37
+  peer-gateway
+  auto-recovery
+  delay restore orphan-port 300
+  ip arp synchronize
+ngoam profile 1
+  oam-channel 2
+ngoam install acl
+
+
+interface Vlan1
+  no ip redirects
+  no ipv6 redirects
+
+interface Vlan93
+  description L3VNI - ENG
+  no shutdown
+  mtu 9216
+  vrf member ENG
+  no ip redirects
+  ip forward
+  ipv6 forward
+  no ipv6 redirects
+
+interface port-channel1
+  description INFRA UPLINK - N9K01-LEAF-SJC31 - VPC PEER LINK
+  switchport
+  switchport mode trunk
+  spanning-tree port type network
+  vpc peer-link
+
+interface nve1
+  no shutdown
+  host-reachability protocol bgp
+  source-interface loopback1
+  member vni 1001
+    mcast-group 239.0.3.1
+  member vni 9393 associate-vrf
+  member vni 10010
+    mcast-group 239.0.3.3
+  member vni 10011
+    mcast-group 239.0.3.3
+  member vni 10012
+    mcast-group 239.0.3.3
+  member vni 10013
+    mcast-group 239.0.3.3
+  member vni 10014
+    mcast-group 239.0.3.3
+  member vni 10018
+    mcast-group 239.0.3.4
+  member vni 10019
+    mcast-group 239.0.3.4
+  member vni 10020
+    mcast-group 239.0.3.4
+  member vni 100116
+    mcast-group 239.0.3.4
+  member vni 100124
+    mcast-group 239.0.3.4
+  member vni 100125
+    mcast-group 239.0.3.5
+  member vni 100126
+    mcast-group 239.0.3.5
+  member vni 100127
+    mcast-group 239.0.3.5
+  member vni 100128
+    mcast-group 239.0.3.5
+  member vni 100129
+    mcast-group 239.0.3.5
+  member vni 100130
+    mcast-group 239.0.3.6
+  member vni 100131
+    mcast-group 239.0.3.6
+  member vni 100148
+    mcast-group 239.0.3.6
+  member vni 100431
+    mcast-group 239.0.3.6
+  member vni 1003050
+    mcast-group 239.0.3.6
+  member vni 1003051
+    mcast-group 239.0.3.7
+  member vni 1003052
+    mcast-group 239.0.3.7
+  member vni 1003061
+    mcast-group 239.0.3.7
+  member vni 1003062
+    mcast-group 239.0.3.7
+  member vni 1003091
+    mcast-group 239.0.3.8
+  member vni 1003092
+    mcast-group 239.0.3.8
+  member vni 1003093
+    mcast-group 239.0.3.8
+  member vni 1003094
+    mcast-group 239.0.3.8
+
+interface Ethernet1/1
+
+interface Ethernet1/2
+
+interface Ethernet1/3
+
+interface Ethernet1/4
+
+interface Ethernet1/5
+
+interface Ethernet1/6
+
+interface Ethernet1/7
+
+interface Ethernet1/8
+
+interface Ethernet1/9
+
+interface Ethernet1/10
+
+interface Ethernet1/11
+
+interface Ethernet1/12
+
+interface Ethernet1/13
+
+interface Ethernet1/14
+
+interface Ethernet1/15
+
+interface Ethernet1/16
+
+interface Ethernet1/17
+
+interface Ethernet1/18
+
+interface Ethernet1/19
+
+interface Ethernet1/20
+
+interface Ethernet1/21
+
+interface Ethernet1/22
+
+interface Ethernet1/23
+
+interface Ethernet1/24
+
+interface Ethernet1/25
+
+interface Ethernet1/26
+
+interface Ethernet1/27
+
+interface Ethernet1/28
+
+interface Ethernet1/29
+
+interface Ethernet1/30
+
+interface Ethernet1/31
+
+interface Ethernet1/32
+
+interface Ethernet1/33
+
+interface Ethernet1/34
+
+interface Ethernet1/35
+
+interface Ethernet1/36
+
+interface Ethernet1/37
+
+interface Ethernet1/38
+
+interface Ethernet1/39
+
+interface Ethernet1/40
+
+interface Ethernet1/41
+
+interface Ethernet1/42
+
+interface Ethernet1/43
+
+interface Ethernet1/44
+
+interface Ethernet1/45
+
+interface Ethernet1/46
+
+interface Ethernet1/47
+
+interface Ethernet1/48
+
+interface Ethernet1/49
+  description INFRA UPLINK - N9K01-SPINE-SJC31 - ETH1/3
+  mtu 9216
+  speed 100000
+  no negotiate auto
+  ip address 10.166.156.8/31
+  ip ospf network point-to-point
+  ip router ospf 65060 area 0.0.0.0
+  ip pim sparse-mode
+  no shutdown
+
+interface Ethernet1/50
+  description INFRA UPLINK - N9K02-SPINE-SJC31 - ETH1/3
+  mtu 9216
+  speed 100000
+  no negotiate auto
+  ip address 10.166.156.12/31
+  ip ospf network point-to-point
+  ip router ospf 65060 area 0.0.0.0
+  ip pim sparse-mode
+  no shutdown
+
+interface Ethernet1/51
+
+interface Ethernet1/52
+
+interface Ethernet1/53
+
+interface Ethernet1/54
+
+interface Ethernet1/55
+  description INFRA UPLINK - N9K01-SPINE-SJC31 - ETH1/4
+  mtu 9216
+  speed 100000
+  no negotiate auto
+  ip address 10.166.156.10/31
+  ip ospf network point-to-point
+  ip router ospf 65060 area 0.0.0.0
+  ip pim sparse-mode
+  no shutdown
+
+interface Ethernet1/56
+  description INFRA UPLINK - N9K02-SPINE-SJC31 - ETH1/4
+  mtu 9216
+  speed 100000
+  no negotiate auto
+  ip address 10.166.156.14/31
+  ip ospf network point-to-point
+  ip router ospf 65060 area 0.0.0.0
+  ip pim sparse-mode
+  no shutdown
+
+interface Ethernet1/57
+  description INFRA UPLINK - N9K01-LEAF-SJC31 - ETH1/57 - VPC PEER LINK
+  switchport
+  switchport mode trunk
+  channel-group 1 mode active
+  no shutdown
+
+interface Ethernet1/58
+  description INFRA UPLINK - N9K01-LEAF-SJC31 - ETH1/58 - VPC PEER LINK
+  switchport
+  switchport mode trunk
+  channel-group 1 mode active
+  no shutdown
+
+interface Ethernet1/59
+
+interface Ethernet1/60
+
+interface mgmt0
+  vrf member management
+  ip address 10.166.80.38/22
+
+interface loopback0
+  description BGP/OSPF Router-ID
+  ip address 10.166.155.12/32
+  ip router ospf 65060 area 0.0.0.0
+  ip pim sparse-mode
+
+interface loopback1
+  description Anycast VTEP
+  ip address 10.166.155.52/32
+  ip address 10.166.155.101/32 secondary
+  ip router ospf 65060 area 0.0.0.0
+  ip pim sparse-mode
+icam monitor scale
+
+line console
+line vty
+boot nxos bootflash:/nxos.9.3.8.bin 
+router ospf 65060
+  router-id 10.166.155.12
+  log-adjacency-changes detail
+  timers throttle spf 100 500 5000
+  timers lsa-arrival 100
+  timers throttle lsa 100 500 5000
+  table-map /32 filter
+router bgp 65060
+  router-id 10.166.155.12
+  address-family l2vpn evpn
+    maximum-paths ibgp 2
+  neighbor 10.166.155.1
+    remote-as 65060
+    description n9k01-spine-sjc31
+    update-source loopback0
+    timers 3 10
+    address-family l2vpn evpn
+      send-community
+      send-community extended
+  neighbor 10.166.155.2
+    remote-as 65060
+    description n9k02-spine-sjc31
+    update-source loopback0
+    timers 3 10
+    address-family l2vpn evpn
+      send-community
+      send-community extended
+
+l2rib dup-host-mac-detection 2 180
+logging server 10.253.4.12 5 use-vrf management
+logging server 10.180.164.44 5 use-vrf management
+logging monitor 6
+logging level user 2
+logging level syslog 6
+
+

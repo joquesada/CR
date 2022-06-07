@@ -1,0 +1,1676 @@
+DEBUG:paramiko.transport:starting thread (client mode): 0x7843f2b0
+DEBUG:paramiko.transport:starting thread (client mode): 0x7843f370
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.10.3
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.10.3
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-OpenSSH_8.0 PKIX[12.1]
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.0)
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-OpenSSH_8.0 PKIX[12.1]
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.0)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group16-sha512, diffie-hellman-group14-sha1, diffie-hellman-group14-sha256
+DEBUG:paramiko.transport:server key: ssh-rsa, rsa-sha2-256
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes256-ctr, aes256-gcm@openssh.com, aes128-gcm@openssh.com
+DEBUG:paramiko.transport:kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group16-sha512, diffie-hellman-group14-sha1, diffie-hellman-group14-sha256
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes256-ctr, aes256-gcm@openssh.com, aes128-gcm@openssh.com
+DEBUG:paramiko.transport:server key: ssh-rsa, rsa-sha2-256
+DEBUG:paramiko.transport:client mac: hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes256-ctr, aes256-gcm@openssh.com, aes128-gcm@openssh.com
+DEBUG:paramiko.transport:server mac: hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes256-ctr, aes256-gcm@openssh.com, aes128-gcm@openssh.com
+DEBUG:paramiko.transport:client compress: none, zlib@openssh.com
+DEBUG:paramiko.transport:client mac: hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEBUG:paramiko.transport:server compress: none, zlib@openssh.com
+DEBUG:paramiko.transport:server mac: hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:client compress: none, zlib@openssh.com
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:server compress: none, zlib@openssh.com
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:Kex: curve25519-sha256@libssh.org
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:HostKey: rsa-sha2-256
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:Kex: curve25519-sha256@libssh.org
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:HostKey: rsa-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+DEBUG:paramiko.transport:kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Got EXT_INFO: {'publickey-algorithms@roumenpetrov.info': b'x509v3-sign-rsa,x509v3-sign-dss,ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521', 'server-sig-algs': b'x509v3-sign-rsa,x509v3-sign-dss,ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521'}
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 10.10.10.11: b'7c8afd7dcbd4ba6e6e21d52c4389fc75'
+DEBUG:paramiko.transport:Got EXT_INFO: {'publickey-algorithms@roumenpetrov.info': b'x509v3-sign-rsa,x509v3-sign-dss,ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521', 'server-sig-algs': b'x509v3-sign-rsa,x509v3-sign-dss,ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521'}
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 10.10.10.10: b'7c8afd7dcbd4ba6e6e21d52c4389fc75'
+DEBUG:paramiko.transport:userauth is OK
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b'User Access Verification\n'
+INFO:paramiko.transport:Auth banner: b'User Access Verification\n'
+INFO:paramiko.transport:Authentication (password) successful!
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:Received global request "hostkeys-00@openssh.com"
+DEBUG:paramiko.transport:Rejecting "hostkeys-00@openssh.com" global request from server.
+DEBUG:paramiko.transport:Received global request "hostkeys-00@openssh.com"
+DEBUG:paramiko.transport:Rejecting "hostkeys-00@openssh.com" global request from server.
+DEBUG:paramiko.transport:[chan 0] Max packet out: 32768 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:read_channel: 
+DEBUG:paramiko.transport:[chan 0] Max packet out: 32768 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: Cisco NX-OS Software
+Copyright (c) 2002-2021, Cisco Systems, Inc. All rights reserved.
+Nexus 9000v software ("Nexus 9000v Software") and related documentation,
+files or other reference materials ("Documentation") are
+the proprietary property and confidential information of Cisco
+Systems, Inc. ("Cisco") and are protected, without limitation,
+pursuant to United States and International copyright and trademark
+laws in the applicable jurisdiction which provide civil and criminal
+penalties for copying or distribution without Cisco's authorization.
+
+Any use or disclosure, in whole or in part, of the Nexus 9000v Software
+or Documentation to any third party for any purposes is expressly
+prohibited except as otherwise authorized by Cisco in writing.
+The copyrights to certain works contained herein are owned by other
+third parties and are used and distributed under license. Some parts
+of this software may be covered under the GNU Public License or the
+GNU Lesser General Public License. A copy of each such license is
+available at
+http://www.gnu.org/licenses/gpl.html and
+http://www.gnu.org/licenses/lgpl.html
+***************************************************************************
+*  Nexus 9000v is strictly limited to use for evaluation, demonstration   *
+*  and NX-OS education. Any use or disclosure, in whole or in part of     *
+*  the Nexus 9000v Software or Documentation to any third party for any   *
+*  purposes is expressly prohibited except as otherwise authorized by     *
+*  Cisco in writing.                                                      *
+***************************************************************************
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: Cisco NX-OS Software
+Copyright (c) 2002-2021, Cisco Systems, Inc. All rights reserved.
+Nexus 9000v software ("Nexus 9000v Software") and related documentation,
+files or other reference materials ("Documentation") are
+the proprietary property and confidential information of Cisco
+Systems, Inc. ("Cisco") and are protected, without limitation,
+pursuant to United States and International copyright and trademark
+laws in the applicable jurisdiction which provide civil and criminal
+penalties for copying or distribution without Cisco's authorization.
+
+Any use or disclosure, in whole or in part, of the Nexus 9000v Software
+or Documentation to any third party for any purposes is expressly
+prohibited except as otherwise authorized by Cisco in writing.
+The copyrights to certain works contained herein are owned by other
+third parties and are used and distributed under license. Some parts
+of this software may be covered under the GNU Public License or the
+GNU Lesser General Public License. A copy of each such license is
+available at
+http://www.gnu.org/licenses/gpl.html and
+http://www.gnu.org/licenses/lgpl.html
+***************************************************************************
+*  Nexus 9000v is strictly limited to use for evaluation, demonstration   *
+*  and NX-OS education. Any use or disclosure, in whole or in part of     *
+*  the Nexus 9000v Software or Documentation to any third party for any   *
+*  purposes is expressly prohibited except as otherwise authorized by     *
+*  Cisco in writing.                                                      *
+***************************************************************************
+
+DEBUG:netmiko:read_channel: 
+n9k02# 
+DEBUG:netmiko:Pattern found: ([>#]) 
+Cisco NX-OS Software
+Copyright (c) 2002-2021, Cisco Systems, Inc. All rights reserved.
+Nexus 9000v software ("Nexus 9000v Software") and related documentation,
+files or other reference materials ("Documentation") are
+the proprietary property and confidential information of Cisco
+Systems, Inc. ("Cisco") and are protected, without limitation,
+pursuant to United States and International copyright and trademark
+laws in the applicable jurisdiction which provide civil and criminal
+penalties for copying or distribution without Cisco's authorization.
+
+Any use or disclosure, in whole or in part, of the Nexus 9000v Software
+or Documentation to any third party for any purposes is expressly
+prohibited except as otherwise authorized by Cisco in writing.
+The copyrights to certain works contained herein are owned by other
+third parties and are used and distributed under license. Some parts
+of this software may be covered under the GNU Public License or the
+GNU Lesser General Public License. A copy of each such license is
+available at
+http://www.gnu.org/licenses/gpl.html and
+http://www.gnu.org/licenses/lgpl.html
+***************************************************************************
+*  Nexus 9000v is strictly limited to use for evaluation, demonstration   *
+*  and NX-OS education. Any use or disclosure, in whole or in part of     *
+*  the Nexus 9000v Software or Documentation to any third party for any   *
+*  purposes is expressly prohibited except as otherwise authorized by     *
+*  Cisco in writing.                                                      *
+***************************************************************************
+
+n9k02#
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+n9k01# 
+DEBUG:netmiko:Pattern found: ([>#]) 
+Cisco NX-OS Software
+Copyright (c) 2002-2021, Cisco Systems, Inc. All rights reserved.
+Nexus 9000v software ("Nexus 9000v Software") and related documentation,
+files or other reference materials ("Documentation") are
+the proprietary property and confidential information of Cisco
+Systems, Inc. ("Cisco") and are protected, without limitation,
+pursuant to United States and International copyright and trademark
+laws in the applicable jurisdiction which provide civil and criminal
+penalties for copying or distribution without Cisco's authorization.
+
+Any use or disclosure, in whole or in part, of the Nexus 9000v Software
+or Documentation to any third party for any purposes is expressly
+prohibited except as otherwise authorized by Cisco in writing.
+The copyrights to certain works contained herein are owned by other
+third parties and are used and distributed under license. Some parts
+of this software may be covered under the GNU Public License or the
+GNU Lesser General Public License. A copy of each such license is
+available at
+http://www.gnu.org/licenses/gpl.html and
+http://www.gnu.org/licenses/lgpl.html
+***************************************************************************
+*  Nexus 9000v is strictly limited to use for evaluation, demonstration   *
+*  and NX-OS education. Any use or disclosure, in whole or in part of     *
+*  the Nexus 9000v Software or Documentation to any third party for any   *
+*  purposes is expressly prohibited except as otherwise authorized by     *
+*  Cisco in writing.                                                      *
+***************************************************************************
+
+n9k01#
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: terminal width 511
+n9k02# 
+DEBUG:netmiko:Pattern found: (terminal width 511)  terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: terminal width 511
+n9k01# 
+DEBUG:netmiko:Pattern found: (terminal width 511)  terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: terminal length 0
+n9k02# 
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+n9k02# terminal length 0
+DEBUG:netmiko:
+n9k02# terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: terminal length 0
+n9k01# 
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+n9k01# terminal length 0
+DEBUG:netmiko:
+n9k01# terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+n9k02# 
+DEBUG:netmiko:Pattern found: (\#|>) 
+n9k02#
+DEBUG:netmiko:read_channel: 
+n9k01# 
+DEBUG:netmiko:Pattern found: (\#|>) 
+n9k01#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is n9k02#
+DEBUG:netmiko:write_channel: b'conf t\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is n9k01#
+DEBUG:netmiko:write_channel: b'conf t\n'
+DEBUG:netmiko:read_channel: conf t
+Enter configuration commands, one per line. End with CNTL/Z.
+
+n9k02(config)# 
+DEBUG:netmiko:read_channel: conf t
+Enter configuration commands, one per line. End with CNTL/Z.
+
+n9k01(config)# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'cli alias name wr copy running-config startup-config\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'cli alias name wr copy running-config startup-config\n'
+DEBUG:netmiko:read_channel: cli alias name wr copy running-config startup-config
+n9k02(config)# 
+DEBUG:netmiko:read_channel: cli alias name wr copy running-config startup-config
+n9k01(config)# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'end\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'end\n'
+DEBUG:netmiko:read_channel: end
+n9k02# 
+DEBUG:netmiko:read_channel: end
+n9k01# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'copy r s\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'copy r s\n'
+DEBUG:netmiko:read_channel: copy r s
+
+DEBUG:netmiko:read_channel: copy r s
+
+DEBUG:netmiko:read_channel: 
+[#                                       ]   0%
+[#                                       ]   1%
+[#                                       ]   2%
+[##                                      ]   3%
+[##                                      ]   4%
+[###                                     ]   5%
+[###                                     ]   6%
+[###                                     ]   7%
+[####                                    ]   8%
+[####                                    ]   9%
+[#####                                   ]  10%
+[#####                                   ]  11%
+[#####                                   ]  12%
+[######                                  ]  13%
+[######                                  ]  14%
+[#######                                 ]  15%
+[#######                                 ]  16%
+[#######                                 ]  17%
+[########                                ]  18%
+[########                                ]  19%
+[#########                               ]  20%
+[#########                               ]  21%
+[#########                               ]  22%
+[##########                              ]  23%
+[##########                              ]  24%
+[###########                             ]  25%
+[###########                             ]  26%
+[###########                             ]  27%
+[############                            ]  28%
+[############                            ]  29%
+[#############                           ]  30%
+[#############                           ]  31%
+[#############                           ]  32%
+[##############                          ]  33%
+[##############                          ]  34%
+[###############                         ]  35%
+[###############                         ]  36%
+[###############                         ]  37%
+[################                        ]  38%
+[################                        ]  39%
+[#################                       ]  40%
+[#################                       ]  41%
+[#################                       ]  42%
+[##################                      ]  43%
+[##################                      ]  44%
+[###################                     ]  45%
+[###################                     ]  46%
+[###################                     ]  47%
+[####################                    ]  48%
+[####################                    ]  49%
+[#####################                   ]  50%
+[#####################                   ]  51%
+[#####################                   ]  52%
+[######################                  ]  53%
+[######################                  ]  54%
+[#######################                 ]  55%
+[#######################                 ]  56%
+[#######################                 ]  57%
+[########################                ]  58%
+[########################                ]  59%
+[#########################               ]  60%
+[#########################               ]  61%
+[#########################               ]  62%
+[##########################              ]  63%
+[##########################              ]  64%
+[###########################             ]  65%
+[###########################             ]  66%
+[###########################             ]  67%
+[############################            ]  68%
+[############################            ]  69%
+[#############################           ]  70%
+[#############################           ]  71%
+[#############################           ]  72%
+[##############################          ]  73%
+[##############################          ]  74%
+[###############################         ]  75%
+[###############################         ]  76%
+[###############################         ]  77%
+[################################        ]  78%
+[################################        ]  79%
+[#################################       ]  80%
+[#################################       ]  81%
+[#################################       ]  82%
+[##################################      ]  83%
+[##################################      ]  84%
+[###################################     ]  85%
+[###################################     ]  86%
+[###################################     ]  87%
+[####################################    ]  88%
+[####################################    ]  89%
+[#####################################   ]  90%
+[#####################################   ]  91%
+[#####################################   ]  92%
+[######################################  ]  93%
+[######################################  ]  94%
+[####################################### ]  95%
+[####################################### ]  96%
+[####################################### ]  97%
+[########################################]  98%
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+[#                                       ]   0%
+[#                                       ]   1%
+[#                                       ]   2%
+[##                                      ]   3%
+[##                                      ]   4%
+[###                                     ]   5%
+[###                                     ]   6%
+[###                                     ]   7%
+[####                                    ]   8%
+[####                                    ]   9%
+[#####                                   ]  10%
+[#####                                   ]  11%
+[#####                                   ]  12%
+[######                                  ]  13%
+[######                                  ]  14%
+[#######                                 ]  15%
+[#######                                 ]  16%
+[#######                                 ]  17%
+[########                                ]  18%
+[########                                ]  19%
+[#########                               ]  20%
+[#########                               ]  21%
+[#########                               ]  22%
+[##########                              ]  23%
+[##########                              ]  24%
+[###########                             ]  25%
+[###########                             ]  25%
+[###########                             ]  26%
+[###########                             ]  27%
+[############                            ]  28%
+[############                            ]  29%
+[#############                           ]  30%
+[#############                           ]  31%
+[#############                           ]  32%
+[##############                          ]  33%
+[##############                          ]  34%
+[###############                         ]  35%
+[###############                         ]  36%
+[###############                         ]  37%
+[################                        ]  38%
+[################                        ]  39%
+[#################                       ]  40%
+[#################                       ]  41%
+[#################                       ]  42%
+[##################                      ]  43%
+[##################                      ]  44%
+[###################                     ]  45%
+[###################                     ]  46%
+[###################                     ]  47%
+[####################                    ]  48%
+[####################                    ]  49%
+[#####################                   ]  50%
+[#####################                   ]  50%
+[#####################                   ]  51%
+[#####################                   ]  52%
+[######################                  ]  53%
+[######################                  ]  54%
+[#######################                 ]  55%
+[#######################                 ]  56%
+[#######################                 ]  57%
+[########################                ]  58%
+[########################                ]  59%
+[#########################               ]  60%
+[#########################               ]  61%
+[#########################               ]  62%
+[##########################              ]  63%
+[##########################              ]  64%
+[###########################             ]  65%
+[###########################             ]  66%
+[###########################             ]  67%
+[############################            ]  68%
+[############################            ]  69%
+[#############################           ]  70%
+[#############################           ]  71%
+[#############################           ]  72%
+[##############################          ]  73%
+[##############################          ]  74%
+[###############################         ]  75%
+[###############################         ]  75%
+[###############################         ]  76%
+[###############################         ]  77%
+[################################        ]  78%
+[################################        ]  79%
+[#################################       ]  80%
+[#################################       ]  81%
+[#################################       ]  82%
+[##################################      ]  83%
+[##################################      ]  84%
+[###################################     ]  85%
+[###################################     ]  86%
+[###################################     ]  87%
+[####################################    ]  88%
+[####################################    ]  89%
+[#####################################   ]  90%
+[#####################################   ]  91%
+[#####################################   ]  92%
+[######################################  ]  93%
+[######################################  ]  94%
+[####################################### ]  95%
+[####################################### ]  96%
+[####################################### ]  97%
+[########################################]  98%
+[########################################]  99%
+DEBUG:netmiko:read_channel: 
+[########################################]  99%
+[########################################] 100%
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: Copy complete, now saving to disk (please wait)...
+Copy complete.
+
+n9k02# 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+[########################################] 100%
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+n9k02# 
+DEBUG:netmiko:read_channel: Copy complete, now saving to disk (please wait)...
+Copy complete.
+
+n9k01# 
+n9k01# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'exit\n'
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'exit\n'
+DEBUG:paramiko.transport:starting thread (client mode): 0x30bc1f40
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.10.3
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-OpenSSH_8.0 PKIX[12.1]
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.0)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group16-sha512, diffie-hellman-group14-sha1, diffie-hellman-group14-sha256
+DEBUG:paramiko.transport:server key: ssh-rsa, rsa-sha2-256
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes256-ctr, aes256-gcm@openssh.com, aes128-gcm@openssh.com
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes256-ctr, aes256-gcm@openssh.com, aes128-gcm@openssh.com
+DEBUG:paramiko.transport:client mac: hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEBUG:paramiko.transport:server mac: hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEBUG:paramiko.transport:client compress: none, zlib@openssh.com
+DEBUG:paramiko.transport:server compress: none, zlib@openssh.com
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: curve25519-sha256@libssh.org
+DEBUG:paramiko.transport:HostKey: rsa-sha2-256
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 10.10.10.10: b'7c8afd7dcbd4ba6e6e21d52c4389fc75'
+DEBUG:paramiko.transport:Got EXT_INFO: {'publickey-algorithms@roumenpetrov.info': b'x509v3-sign-rsa,x509v3-sign-dss,ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521', 'server-sig-algs': b'x509v3-sign-rsa,x509v3-sign-dss,ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521'}
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b'User Access Verification\n'
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:Received global request "hostkeys-00@openssh.com"
+DEBUG:paramiko.transport:Rejecting "hostkeys-00@openssh.com" global request from server.
+DEBUG:paramiko.transport:[chan 0] Max packet out: 32768 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: Cisco NX-OS Software
+Copyright (c) 2002-2021, Cisco Systems, Inc. All rights reserved.
+Nexus 9000v software ("Nexus 9000v Software") and related documentation,
+files or other reference materials ("Documentation") are
+the proprietary property and confidential information of Cisco
+Systems, Inc. ("Cisco") and are protected, without limitation,
+pursuant to United States and International copyright and trademark
+laws in the applicable jurisdiction which provide civil and criminal
+penalties for copying or distribution without Cisco's authorization.
+
+Any use or disclosure, in whole or in part, of the Nexus 9000v Software
+or Documentation to any third party for any purposes is expressly
+prohibited except as otherwise authorized by Cisco in writing.
+The copyrights to certain works contained herein are owned by other
+third parties and are used and distributed under license. Some parts
+of this software may be covered under the GNU Public License or the
+GNU Lesser General Public License. A copy of each such license is
+available at
+http://www.gnu.org/licenses/gpl.html and
+http://www.gnu.org/licenses/lgpl.html
+***************************************************************************
+*  Nexus 9000v is strictly limited to use for evaluation, demonstration   *
+*  and NX-OS education. Any use or disclosure, in whole or in part of     *
+*  the Nexus 9000v Software or Documentation to any third party for any   *
+*  purposes is expressly prohibited except as otherwise authorized by     *
+*  Cisco in writing.                                                      *
+***************************************************************************
+
+DEBUG:netmiko:read_channel: 
+n9k01# 
+DEBUG:netmiko:Pattern found: ([>#]) 
+Cisco NX-OS Software
+Copyright (c) 2002-2021, Cisco Systems, Inc. All rights reserved.
+Nexus 9000v software ("Nexus 9000v Software") and related documentation,
+files or other reference materials ("Documentation") are
+the proprietary property and confidential information of Cisco
+Systems, Inc. ("Cisco") and are protected, without limitation,
+pursuant to United States and International copyright and trademark
+laws in the applicable jurisdiction which provide civil and criminal
+penalties for copying or distribution without Cisco's authorization.
+
+Any use or disclosure, in whole or in part, of the Nexus 9000v Software
+or Documentation to any third party for any purposes is expressly
+prohibited except as otherwise authorized by Cisco in writing.
+The copyrights to certain works contained herein are owned by other
+third parties and are used and distributed under license. Some parts
+of this software may be covered under the GNU Public License or the
+GNU Lesser General Public License. A copy of each such license is
+available at
+http://www.gnu.org/licenses/gpl.html and
+http://www.gnu.org/licenses/lgpl.html
+***************************************************************************
+*  Nexus 9000v is strictly limited to use for evaluation, demonstration   *
+*  and NX-OS education. Any use or disclosure, in whole or in part of     *
+*  the Nexus 9000v Software or Documentation to any third party for any   *
+*  purposes is expressly prohibited except as otherwise authorized by     *
+*  Cisco in writing.                                                      *
+***************************************************************************
+
+n9k01#
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: terminal width 511
+n9k01# 
+DEBUG:netmiko:Pattern found: (terminal width 511)  terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: terminal length 0
+n9k01# 
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+n9k01# terminal length 0
+DEBUG:netmiko:
+n9k01# terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+n9k01# 
+DEBUG:netmiko:Pattern found: (\#|>) 
+n9k01#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is n9k01#
+DEBUG:netmiko:write_channel: b'conf t\n'
+DEBUG:netmiko:read_channel: conf t
+Enter configuration commands, one per line. End with CNTL/Z.
+
+n9k01(config)# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'cli alias name wr copy running-config startup-config\n'
+DEBUG:netmiko:read_channel: cli alias name wr copy running-config startup-config
+n9k01(config)# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'end\n'
+DEBUG:netmiko:read_channel: end
+n9k01# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'copy r s\n'
+DEBUG:netmiko:read_channel: copy r s
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+[#                                       ]   0%
+[#                                       ]   1%
+[#                                       ]   2%
+[##                                      ]   3%
+[##                                      ]   4%
+[###                                     ]   5%
+[###                                     ]   6%
+[###                                     ]   7%
+[####                                    ]   8%
+[####                                    ]   9%
+[#####                                   ]  10%
+[#####                                   ]  11%
+[#####                                   ]  12%
+[######                                  ]  13%
+[######                                  ]  14%
+[#######                                 ]  15%
+[#######                                 ]  16%
+[#######                                 ]  17%
+[########                                ]  18%
+[########                                ]  19%
+[#########                               ]  20%
+[#########                               ]  21%
+[#########                               ]  22%
+[##########                              ]  23%
+[##########                              ]  24%
+[###########                             ]  25%
+[###########                             ]  25%
+[###########                             ]  26%
+[###########                             ]  27%
+[############                            ]  28%
+[############                            ]  29%
+[#############                           ]  30%
+[#############                           ]  31%
+[#############                           ]  32%
+[##############                          ]  33%
+[##############                          ]  34%
+[###############                         ]  35%
+[###############                         ]  36%
+[###############                         ]  37%
+[################                        ]  38%
+[################                        ]  39%
+[#################                       ]  40%
+[#################                       ]  41%
+[#################                       ]  42%
+[##################                      ]  43%
+[##################                      ]  44%
+[###################                     ]  45%
+[###################                     ]  46%
+[###################                     ]  47%
+[####################                    ]  48%
+[####################                    ]  49%
+[#####################                   ]  50%
+[#####################                   ]  50%
+[#####################                   ]  51%
+[#####################                   ]  52%
+[######################                  ]  53%
+[######################                  ]  54%
+[#######################                 ]  55%
+[#######################                 ]  56%
+[#######################                 ]  57%
+[########################                ]  58%
+[########################                ]  59%
+[#########################               ]  60%
+[#########################               ]  61%
+[#########################               ]  62%
+[##########################              ]  63%
+[##########################              ]  64%
+[###########################             ]  65%
+[###########################             ]  66%
+[###########################             ]  67%
+[############################            ]  68%
+[############################            ]  69%
+[#############################           ]  70%
+[#############################           ]  71%
+[#############################           ]  72%
+[##############################          ]  73%
+[##############################          ]  74%
+[###############################         ]  75%
+[###############################         ]  75%
+[###############################         ]  76%
+[###############################         ]  77%
+[################################        ]  78%
+[################################        ]  79%
+[#################################       ]  80%
+[#################################       ]  81%
+[#################################       ]  82%
+[##################################      ]  83%
+[##################################      ]  84%
+[###################################     ]  85%
+[###################################     ]  86%
+[###################################     ]  87%
+[####################################    ]  88%
+[####################################    ]  89%
+[#####################################   ]  90%
+[#####################################   ]  91%
+[#####################################   ]  92%
+[######################################  ]  93%
+[######################################  ]  94%
+[####################################### ]  95%
+[####################################### ]  96%
+[####################################### ]  97%
+[########################################]  98%
+[########################################]  99%
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+[########################################] 100%
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: Copy complete, now saving to disk (please wait)...
+Copy complete.
+
+n9k01# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+n9k01# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'exit\n'
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0x303695b0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.10.3
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-OpenSSH_8.0 PKIX[12.1]
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.0)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group16-sha512, diffie-hellman-group14-sha1, diffie-hellman-group14-sha256
+DEBUG:paramiko.transport:server key: ssh-rsa, rsa-sha2-256
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes256-ctr, aes256-gcm@openssh.com, aes128-gcm@openssh.com
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes256-ctr, aes256-gcm@openssh.com, aes128-gcm@openssh.com
+DEBUG:paramiko.transport:client mac: hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEBUG:paramiko.transport:server mac: hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+DEBUG:paramiko.transport:client compress: none, zlib@openssh.com
+DEBUG:paramiko.transport:server compress: none, zlib@openssh.com
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: curve25519-sha256@libssh.org
+DEBUG:paramiko.transport:HostKey: rsa-sha2-256
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Got EXT_INFO: {'publickey-algorithms@roumenpetrov.info': b'x509v3-sign-rsa,x509v3-sign-dss,ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521', 'server-sig-algs': b'x509v3-sign-rsa,x509v3-sign-dss,ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521'}
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 10.10.10.11: b'7c8afd7dcbd4ba6e6e21d52c4389fc75'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b'User Access Verification\n'
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:Received global request "hostkeys-00@openssh.com"
+DEBUG:paramiko.transport:Rejecting "hostkeys-00@openssh.com" global request from server.
+DEBUG:paramiko.transport:[chan 0] Max packet out: 32768 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: Cisco NX-OS Software
+Copyright (c) 2002-2021, Cisco Systems, Inc. All rights reserved.
+Nexus 9000v software ("Nexus 9000v Software") and related documentation,
+files or other reference materials ("Documentation") are
+the proprietary property and confidential information of Cisco
+Systems, Inc. ("Cisco") and are protected, without limitation,
+pursuant to United States and International copyright and trademark
+laws in the applicable jurisdiction which provide civil and criminal
+penalties for copying or distribution without Cisco's authorization.
+
+Any use or disclosure, in whole or in part, of the Nexus 9000v Software
+or Documentation to any third party for any purposes is expressly
+prohibited except as otherwise authorized by Cisco in writing.
+The copyrights to certain works contained herein are owned by other
+third parties and are used and distributed under license. Some parts
+of this software may be covered under the GNU Public License or the
+GNU Lesser General Public License. A copy of each such license is
+available at
+http://www.gnu.org/licenses/gpl.html and
+http://www.gnu.org/licenses/lgpl.html
+***************************************************************************
+*  Nexus 9000v is strictly limited to use for evaluation, demonstration   *
+*  and NX-OS education. Any use or disclosure, in whole or in part of     *
+*  the Nexus 9000v Software or Documentation to any third party for any   *
+*  purposes is expressly prohibited except as otherwise authorized by     *
+*  Cisco in writing.                                                      *
+***************************************************************************
+
+DEBUG:netmiko:read_channel: 
+n9k02# 
+DEBUG:netmiko:Pattern found: ([>#]) 
+Cisco NX-OS Software
+Copyright (c) 2002-2021, Cisco Systems, Inc. All rights reserved.
+Nexus 9000v software ("Nexus 9000v Software") and related documentation,
+files or other reference materials ("Documentation") are
+the proprietary property and confidential information of Cisco
+Systems, Inc. ("Cisco") and are protected, without limitation,
+pursuant to United States and International copyright and trademark
+laws in the applicable jurisdiction which provide civil and criminal
+penalties for copying or distribution without Cisco's authorization.
+
+Any use or disclosure, in whole or in part, of the Nexus 9000v Software
+or Documentation to any third party for any purposes is expressly
+prohibited except as otherwise authorized by Cisco in writing.
+The copyrights to certain works contained herein are owned by other
+third parties and are used and distributed under license. Some parts
+of this software may be covered under the GNU Public License or the
+GNU Lesser General Public License. A copy of each such license is
+available at
+http://www.gnu.org/licenses/gpl.html and
+http://www.gnu.org/licenses/lgpl.html
+***************************************************************************
+*  Nexus 9000v is strictly limited to use for evaluation, demonstration   *
+*  and NX-OS education. Any use or disclosure, in whole or in part of     *
+*  the Nexus 9000v Software or Documentation to any third party for any   *
+*  purposes is expressly prohibited except as otherwise authorized by     *
+*  Cisco in writing.                                                      *
+***************************************************************************
+
+n9k02#
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: terminal width 511
+n9k02# 
+DEBUG:netmiko:Pattern found: (terminal width 511)  terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: terminal length 0
+n9k02# 
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+n9k02# terminal length 0
+DEBUG:netmiko:
+n9k02# terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+n9k02# 
+DEBUG:netmiko:Pattern found: (\#|>) 
+n9k02#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is n9k02#
+DEBUG:netmiko:write_channel: b'conf t\n'
+DEBUG:netmiko:read_channel: conf t
+Enter configuration commands, one per line. End with CNTL/Z.
+
+n9k02(config)# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'cli alias name wr copy running-config startup-config\n'
+DEBUG:netmiko:read_channel: cli alias name wr copy running-config startup-config
+n9k02(config)# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'end\n'
+DEBUG:netmiko:read_channel: end
+n9k02# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'copy r s\n'
+DEBUG:netmiko:read_channel: copy r s
+
+DEBUG:netmiko:read_channel: 
+[#                                       ]   0%
+[#                                       ]   1%
+[#                                       ]   2%
+[##                                      ]   3%
+[##                                      ]   4%
+[###                                     ]   5%
+[###                                     ]   6%
+[###                                     ]   7%
+[####                                    ]   8%
+[####                                    ]   9%
+[#####                                   ]  10%
+[#####                                   ]  11%
+[#####                                   ]  12%
+[######                                  ]  13%
+[######                                  ]  14%
+[#######                                 ]  15%
+[#######                                 ]  16%
+[#######                                 ]  17%
+[########                                ]  18%
+[########                                ]  19%
+[#########                               ]  20%
+[#########                               ]  21%
+[#########                               ]  22%
+[##########                              ]  23%
+[##########                              ]  24%
+[###########                             ]  25%
+[###########                             ]  26%
+[###########                             ]  27%
+[############                            ]  28%
+[############                            ]  29%
+[#############                           ]  30%
+[#############                           ]  31%
+[#############                           ]  32%
+[##############                          ]  33%
+[##############                          ]  34%
+[###############                         ]  35%
+[###############                         ]  36%
+[###############                         ]  37%
+[################                        ]  38%
+[################                        ]  39%
+[#################                       ]  40%
+[#################                       ]  41%
+[#################                       ]  42%
+[##################                      ]  43%
+[##################                      ]  44%
+[###################                     ]  45%
+[###################                     ]  46%
+[###################                     ]  47%
+[####################                    ]  48%
+[####################                    ]  49%
+[#####################                   ]  50%
+[#####################                   ]  51%
+[#####################                   ]  52%
+[######################                  ]  53%
+[######################                  ]  54%
+[#######################                 ]  55%
+[#######################                 ]  56%
+[#######################                 ]  57%
+[########################                ]  58%
+[########################                ]  59%
+[#########################               ]  60%
+[#########################               ]  61%
+[#########################               ]  62%
+[##########################              ]  63%
+[##########################              ]  64%
+[###########################             ]  65%
+[###########################             ]  66%
+[###########################             ]  67%
+[############################            ]  68%
+[############################            ]  69%
+[#############################           ]  70%
+[#############################           ]  71%
+[#############################           ]  72%
+[##############################          ]  73%
+[##############################          ]  74%
+[###############################         ]  75%
+[###############################         ]  76%
+[###############################         ]  77%
+[################################        ]  78%
+[################################        ]  79%
+[#################################       ]  80%
+[#################################       ]  81%
+[#################################       ]  82%
+[##################################      ]  83%
+[##################################      ]  84%
+[###################################     ]  85%
+[###################################     ]  86%
+[###################################     ]  87%
+[####################################    ]  88%
+[####################################    ]  89%
+[#####################################   ]  90%
+[#####################################   ]  91%
+[#####################################   ]  92%
+[######################################  ]  93%
+[######################################  ]  94%
+[####################################### ]  95%
+[####################################### ]  96%
+[####################################### ]  97%
+[########################################]  98%
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+[########################################]  99%
+[########################################] 100%
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: Copy complete, now saving to disk (please wait)...
+Copy complete.
+
+n9k02# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+n9k02# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'exit\n'
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0x21b74b80
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.7.2
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-OpenSSH_8.0 PKIX[12.1]
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.0)
+DEBUG:paramiko.transport:kex algos:['curve25519-sha256', 'curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group16-sha512', 'diffie-hellman-group14-sha1', 'diffie-hellman-group14-sha256'] server key:['ssh-rsa', 'rsa-sha2-256'] client encrypt:['aes128-ctr', 'aes256-ctr', 'aes256-gcm@openssh.com', 'aes128-gcm@openssh.com'] server encrypt:['aes128-ctr', 'aes256-ctr', 'aes256-gcm@openssh.com', 'aes128-gcm@openssh.com'] client mac:['hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] server mac:['hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+DEBUG:paramiko.transport:Kex agreed: curve25519-sha256@libssh.org
+DEBUG:paramiko.transport:HostKey agreed: ssh-rsa
+DEBUG:paramiko.transport:Cipher agreed: aes128-ctr
+DEBUG:paramiko.transport:MAC agreed: hmac-sha2-256
+DEBUG:paramiko.transport:Compression agreed: none
+DEBUG:paramiko.transport:kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 10.10.10.10: b'7c8afd7dcbd4ba6e6e21d52c4389fc75'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b'User Access Verification\n'
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:Received global request "hostkeys-00@openssh.com"
+DEBUG:paramiko.transport:Rejecting "hostkeys-00@openssh.com" global request from server.
+DEBUG:paramiko.transport:[chan 0] Max packet out: 32768 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: Cisco NX-OS Software
+Copyright (c) 2002-2021, Cisco Systems, Inc. All rights reserved.
+Nexus 9000v software ("Nexus 9000v Software") and related documentation,
+files or other reference materials ("Documentation") are
+the proprietary property and confidential information of Cisco
+Systems, Inc. ("Cisco") and are protected, without limitation,
+pursuant to United States and International copyright and trademark
+laws in the applicable jurisdiction which provide civil and criminal
+penalties for copying or distribution without Cisco's authorization.
+
+Any use or disclosure, in whole or in part, of the Nexus 9000v Software
+or Documentation to any third party for any purposes is expressly
+prohibited except as otherwise authorized by Cisco in writing.
+The copyrights to certain works contained herein are owned by other
+third parties and are used and distributed under license. Some parts
+of this software may be covered under the GNU Public License or the
+GNU Lesser General Public License. A copy of each such license is
+available at
+http://www.gnu.org/licenses/gpl.html and
+http://www.gnu.org/licenses/lgpl.html
+***************************************************************************
+*  Nexus 9000v is strictly limited to use for evaluation, demonstration   *
+*  and NX-OS education. Any use or disclosure, in whole or in part of     *
+*  the Nexus 9000v Software or Documentation to any third party for any   *
+*  purposes is expressly prohibited except as otherwise authorized by     *
+*  Cisco in writing.                                                      *
+***************************************************************************
+n9k01# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:Pattern is: terminal width 511
+DEBUG:netmiko:_read_channel_expect read_data: terminal width 511
+
+DEBUG:netmiko:Pattern found: terminal width 511 terminal width 511
+
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:Pattern is: terminal\ length\ 0
+DEBUG:netmiko:_read_channel_expect read_data: terminal length 0
+
+DEBUG:netmiko:Pattern found: terminal\ length\ 0 terminal length 0
+
+DEBUG:netmiko:terminal length 0
+
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: n9k01# terminal length 0
+n9k01# 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+n9k01# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is n9k01#
+DEBUG:netmiko:write_channel: b'conf t\n'
+DEBUG:netmiko:send_command_timing current output: 
+DEBUG:netmiko:read_channel: conf t
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k01(config)# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:send_command_timing final output: Enter configuration commands, one per line. End with CNTL/Z.
+
+DEBUG:netmiko:write_channel: b'cli alias name wr copy running-config startup-config\n'
+DEBUG:netmiko:send_command_timing current output: 
+DEBUG:netmiko:read_channel: cli alias name wr copy running-config startup-config
+n9k01(config)# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:send_command_timing final output: 
+DEBUG:netmiko:write_channel: b'end\n'
+DEBUG:netmiko:send_command_timing current output: 
+DEBUG:netmiko:read_channel: end
+n9k01# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:send_command_timing final output: 
+DEBUG:netmiko:write_channel: b'copy r s\n'
+DEBUG:netmiko:send_command_timing current output: 
+DEBUG:netmiko:read_channel: copy r s
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: [#                                       ]   0%[#                                       ]   1%[#                                       ]   2%[##                                      ]   3%[##                                      ]   4%[###                                     ]   5%[###                                     ]   6%[###                                     ]   7%[####                                    ]   8%[####                                    ]   9%[#####                                   ]  10%[#####                                   ]  11%[#####                                   ]  12%[######                                  ]  13%[######                                  ]  14%[#######                                 ]  15%[#######                                 ]  16%[#######                                 ]  17%[########                                ]  18%[########                                ]  19%[#########                               ]  20%[#########                               ]  21%[#########                               ]  22%[##########                              ]  23%[##########                              ]  24%[###########                             ]  25%[###########                             ]  25%[###########                             ]  26%[###########                             ]  27%[############                            ]  28%[############                            ]  29%[#############                           ]  30%[#############                           ]  31%[#############                           ]  32%[##############                          ]  33%[##############                          ]  34%[###############                         ]  35%[###############                         ]  36%[###############                         ]  37%[################                        ]  38%[################                        ]  39%[#################                       ]  40%[#################                       ]  41%[#################                       ]  42%[##################                      ]  43%[##################                      ]  44%[###################                     ]  45%[###################                     ]  46%[###################                     ]  47%[####################                    ]  48%[####################                    ]  49%[#####################                   ]  50%[#####################                   ]  50%[#####################                   ]  51%[#####################                   ]  52%[######################                  ]  53%[######################                  ]  54%[#######################                 ]  55%[#######################                 ]  56%[#######################                 ]  57%[########################                ]  58%[########################                ]  59%[#########################               ]  60%[#########################               ]  61%[#########################               ]  62%[##########################              ]  63%[##########################              ]  64%[###########################             ]  65%[###########################             ]  66%[###########################             ]  67%[############################            ]  68%[############################            ]  69%[#############################           ]  70%[#############################           ]  71%[#############################           ]  72%[##############################          ]  73%[##############################          ]  74%[###############################         ]  75%[###############################         ]  75%[###############################         ]  76%[###############################         ]  77%[################################        ]  78%[################################        ]  79%[#################################       ]  80%[#################################       ]  81%[#################################       ]  82%[##################################      ]  83%[##################################      ]  84%[###################################     ]  85%[###################################     ]  86%[###################################     ]  87%[####################################    ]  88%[####################################    ]  89%[#####################################   ]  90%[#####################################   ]  91%[#####################################   ]  92%[######################################  ]  93%[######################################  ]  94%[####################################### ]  95%[####################################### ]  96%[####################################### ]  97%[########################################]  98%[########################################]  99%
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:send_command_timing final output: [#                                       ]   0%
+[#                                       ]   1%
+[#                                       ]   2%
+[##                                      ]   3%
+[##                                      ]   4%
+[###                                     ]   5%
+[###                                     ]   6%
+[###                                     ]   7%
+[####                                    ]   8%
+[####                                    ]   9%
+[#####                                   ]  10%
+[#####                                   ]  11%
+[#####                                   ]  12%
+[######                                  ]  13%
+[######                                  ]  14%
+[#######                                 ]  15%
+[#######                                 ]  16%
+[#######                                 ]  17%
+[########                                ]  18%
+[########                                ]  19%
+[#########                               ]  20%
+[#########                               ]  21%
+[#########                               ]  22%
+[##########                              ]  23%
+[##########                              ]  24%
+[###########                             ]  25%
+[###########                             ]  25%
+[###########                             ]  26%
+[###########                             ]  27%
+[############                            ]  28%
+[############                            ]  29%
+[#############                           ]  30%
+[#############                           ]  31%
+[#############                           ]  32%
+[##############                          ]  33%
+[##############                          ]  34%
+[###############                         ]  35%
+[###############                         ]  36%
+[###############                         ]  37%
+[################                        ]  38%
+[################                        ]  39%
+[#################                       ]  40%
+[#################                       ]  41%
+[#################                       ]  42%
+[##################                      ]  43%
+[##################                      ]  44%
+[###################                     ]  45%
+[###################                     ]  46%
+[###################                     ]  47%
+[####################                    ]  48%
+[####################                    ]  49%
+[#####################                   ]  50%
+[#####################                   ]  50%
+[#####################                   ]  51%
+[#####################                   ]  52%
+[######################                  ]  53%
+[######################                  ]  54%
+[#######################                 ]  55%
+[#######################                 ]  56%
+[#######################                 ]  57%
+[########################                ]  58%
+[########################                ]  59%
+[#########################               ]  60%
+[#########################               ]  61%
+[#########################               ]  62%
+[##########################              ]  63%
+[##########################              ]  64%
+[###########################             ]  65%
+[###########################             ]  66%
+[###########################             ]  67%
+[############################            ]  68%
+[############################            ]  69%
+[#############################           ]  70%
+[#############################           ]  71%
+[#############################           ]  72%
+[##############################          ]  73%
+[##############################          ]  74%
+[###############################         ]  75%
+[###############################         ]  75%
+[###############################         ]  76%
+[###############################         ]  77%
+[################################        ]  78%
+[################################        ]  79%
+[#################################       ]  80%
+[#################################       ]  81%
+[#################################       ]  82%
+[##################################      ]  83%
+[##################################      ]  84%
+[###################################     ]  85%
+[###################################     ]  86%
+[###################################     ]  87%
+[####################################    ]  88%
+[####################################    ]  89%
+[#####################################   ]  90%
+[#####################################   ]  91%
+[#####################################   ]  92%
+[######################################  ]  93%
+[######################################  ]  94%
+[####################################### ]  95%
+[####################################### ]  96%
+[####################################### ]  97%
+[########################################]  98%
+[########################################]  99%
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: [########################################] 100%
+Copy complete, now saving to disk (please wait)...
+Copy complete.
+n9k01# 
+n9k01# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'exit\n'
+DEBUG:paramiko.transport:starting thread (client mode): 0x21b94fa0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.7.2
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-OpenSSH_8.0 PKIX[12.1]
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.0)
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:kex algos:['curve25519-sha256', 'curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group16-sha512', 'diffie-hellman-group14-sha1', 'diffie-hellman-group14-sha256'] server key:['ssh-rsa', 'rsa-sha2-256'] client encrypt:['aes128-ctr', 'aes256-ctr', 'aes256-gcm@openssh.com', 'aes128-gcm@openssh.com'] server encrypt:['aes128-ctr', 'aes256-ctr', 'aes256-gcm@openssh.com', 'aes128-gcm@openssh.com'] client mac:['hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] server mac:['hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+DEBUG:paramiko.transport:Kex agreed: curve25519-sha256@libssh.org
+DEBUG:paramiko.transport:HostKey agreed: ssh-rsa
+DEBUG:paramiko.transport:Cipher agreed: aes128-ctr
+DEBUG:paramiko.transport:MAC agreed: hmac-sha2-256
+DEBUG:paramiko.transport:Compression agreed: none
+DEBUG:paramiko.transport:kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 10.10.10.11: b'7c8afd7dcbd4ba6e6e21d52c4389fc75'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b'User Access Verification\n'
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:Received global request "hostkeys-00@openssh.com"
+DEBUG:paramiko.transport:Rejecting "hostkeys-00@openssh.com" global request from server.
+DEBUG:paramiko.transport:[chan 0] Max packet out: 32768 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: Cisco NX-OS Software
+Copyright (c) 2002-2021, Cisco Systems, Inc. All rights reserved.
+Nexus 9000v software ("Nexus 9000v Software") and related documentation,
+files or other reference materials ("Documentation") are
+the proprietary property and confidential information of Cisco
+Systems, Inc. ("Cisco") and are protected, without limitation,
+pursuant to United States and International copyright and trademark
+laws in the applicable jurisdiction which provide civil and criminal
+penalties for copying or distribution without Cisco's authorization.
+
+Any use or disclosure, in whole or in part, of the Nexus 9000v Software
+or Documentation to any third party for any purposes is expressly
+prohibited except as otherwise authorized by Cisco in writing.
+The copyrights to certain works contained herein are owned by other
+third parties and are used and distributed under license. Some parts
+of this software may be covered under the GNU Public License or the
+GNU Lesser General Public License. A copy of each such license is
+available at
+http://www.gnu.org/licenses/gpl.html and
+http://www.gnu.org/licenses/lgpl.html
+***************************************************************************
+*  Nexus 9000v is strictly limited to use for evaluation, demonstration   *
+*  and NX-OS education. Any use or disclosure, in whole or in part of     *
+*  the Nexus 9000v Software or Documentation to any third party for any   *
+*  purposes is expressly prohibited except as otherwise authorized by     *
+*  Cisco in writing.                                                      *
+***************************************************************************
+n9k02# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:Pattern is: terminal width 511
+DEBUG:netmiko:_read_channel_expect read_data: terminal width 511
+
+DEBUG:netmiko:Pattern found: terminal width 511 terminal width 511
+
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:Pattern is: terminal\ length\ 0
+DEBUG:netmiko:_read_channel_expect read_data: n9k02# terminal 
+DEBUG:netmiko:_read_channel_expect read_data: length 0
+n9k02# 
+DEBUG:netmiko:Pattern found: terminal\ length\ 0 n9k02# terminal length 0
+n9k02# 
+DEBUG:netmiko:n9k02# terminal length 0
+n9k02# 
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+n9k02# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is n9k02#
+DEBUG:netmiko:write_channel: b'conf t\n'
+DEBUG:netmiko:send_command_timing current output: 
+DEBUG:netmiko:read_channel: conf t
+Enter configuration commands, one per line. End with CNTL/Z.
+n9k02(config)# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:send_command_timing final output: Enter configuration commands, one per line. End with CNTL/Z.
+
+DEBUG:netmiko:write_channel: b'cli alias name wr copy running-config startup-config\n'
+DEBUG:netmiko:send_command_timing current output: 
+DEBUG:netmiko:read_channel: cli alias name wr copy running-config startup-config
+n9k02(config)# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:send_command_timing final output: 
+DEBUG:netmiko:write_channel: b'end\n'
+DEBUG:netmiko:send_command_timing current output: 
+DEBUG:netmiko:read_channel: end
+n9k02# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:send_command_timing final output: 
+DEBUG:netmiko:write_channel: b'copy r s\n'
+DEBUG:netmiko:send_command_timing current output: 
+DEBUG:netmiko:read_channel: copy r s
+
+DEBUG:netmiko:read_channel: [#                                       ]   0%[#                                       ]   1%[#                                       ]   2%[##                                      ]   3%[##                                      ]   4%[###                                     ]   5%[###                                     ]   6%[###                                     ]   7%[####                                    ]   8%[####                                    ]   9%[#####                                   ]  10%[#####                                   ]  11%[#####                                   ]  12%[######                                  ]  13%[######                                  ]  14%[#######                                 ]  15%[#######                                 ]  16%[#######                                 ]  17%[########                                ]  18%[########                                ]  19%[#########                               ]  20%[#########                               ]  21%[#########                               ]  22%[##########                              ]  23%[##########                              ]  24%[###########                             ]  25%[###########                             ]  26%[###########                             ]  27%[############                            ]  28%[############                            ]  29%[#############                           ]  30%[#############                           ]  31%[#############                           ]  32%[##############                          ]  33%[##############                          ]  34%[###############                         ]  35%[###############                         ]  36%[###############                         ]  37%[################                        ]  38%[################                        ]  39%[#################                       ]  40%[#################                       ]  41%[#################                       ]  42%[##################                      ]  43%[##################                      ]  44%[###################                     ]  45%[###################                     ]  46%[###################                     ]  47%[####################                    ]  48%[####################                    ]  49%[#####################                   ]  50%[#####################                   ]  51%[#####################                   ]  52%[######################                  ]  53%[######################                  ]  54%[#######################                 ]  55%[#######################                 ]  56%[#######################                 ]  57%[########################                ]  58%[########################                ]  59%[#########################               ]  60%[#########################               ]  61%[#########################               ]  62%[##########################              ]  63%[##########################              ]  64%[###########################             ]  65%[###########################             ]  66%[###########################             ]  67%[############################            ]  68%[############################            ]  69%[#############################           ]  70%[#############################           ]  71%[#############################           ]  72%[##############################          ]  73%[##############################          ]  74%[###############################         ]  75%[###############################         ]  76%[###############################         ]  77%[################################        ]  78%[################################        ]  79%[#################################       ]  80%[#################################       ]  81%[#################################       ]  82%[##################################      ]  83%[##################################      ]  84%[###################################     ]  85%[###################################     ]  86%[###################################     ]  87%[####################################    ]  88%[####################################    ]  89%[#####################################   ]  90%[#####################################   ]  91%[#####################################   ]  92%[######################################  ]  93%[######################################  ]  94%[####################################### ]  95%[####################################### ]  96%[####################################### ]  97%[########################################]  98%
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: [########################################]  99%[########################################] 100%
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: Copy complete, now saving to disk (please wait)...
+Copy complete.
+n9k02# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:send_command_timing final output: [#                                       ]   0%
+[#                                       ]   1%
+[#                                       ]   2%
+[##                                      ]   3%
+[##                                      ]   4%
+[###                                     ]   5%
+[###                                     ]   6%
+[###                                     ]   7%
+[####                                    ]   8%
+[####                                    ]   9%
+[#####                                   ]  10%
+[#####                                   ]  11%
+[#####                                   ]  12%
+[######                                  ]  13%
+[######                                  ]  14%
+[#######                                 ]  15%
+[#######                                 ]  16%
+[#######                                 ]  17%
+[########                                ]  18%
+[########                                ]  19%
+[#########                               ]  20%
+[#########                               ]  21%
+[#########                               ]  22%
+[##########                              ]  23%
+[##########                              ]  24%
+[###########                             ]  25%
+[###########                             ]  26%
+[###########                             ]  27%
+[############                            ]  28%
+[############                            ]  29%
+[#############                           ]  30%
+[#############                           ]  31%
+[#############                           ]  32%
+[##############                          ]  33%
+[##############                          ]  34%
+[###############                         ]  35%
+[###############                         ]  36%
+[###############                         ]  37%
+[################                        ]  38%
+[################                        ]  39%
+[#################                       ]  40%
+[#################                       ]  41%
+[#################                       ]  42%
+[##################                      ]  43%
+[##################                      ]  44%
+[###################                     ]  45%
+[###################                     ]  46%
+[###################                     ]  47%
+[####################                    ]  48%
+[####################                    ]  49%
+[#####################                   ]  50%
+[#####################                   ]  51%
+[#####################                   ]  52%
+[######################                  ]  53%
+[######################                  ]  54%
+[#######################                 ]  55%
+[#######################                 ]  56%
+[#######################                 ]  57%
+[########################                ]  58%
+[########################                ]  59%
+[#########################               ]  60%
+[#########################               ]  61%
+[#########################               ]  62%
+[##########################              ]  63%
+[##########################              ]  64%
+[###########################             ]  65%
+[###########################             ]  66%
+[###########################             ]  67%
+[############################            ]  68%
+[############################            ]  69%
+[#############################           ]  70%
+[#############################           ]  71%
+[#############################           ]  72%
+[##############################          ]  73%
+[##############################          ]  74%
+[###############################         ]  75%
+[###############################         ]  76%
+[###############################         ]  77%
+[################################        ]  78%
+[################################        ]  79%
+[#################################       ]  80%
+[#################################       ]  81%
+[#################################       ]  82%
+[##################################      ]  83%
+[##################################      ]  84%
+[###################################     ]  85%
+[###################################     ]  86%
+[###################################     ]  87%
+[####################################    ]  88%
+[####################################    ]  89%
+[#####################################   ]  90%
+[#####################################   ]  91%
+[#####################################   ]  92%
+[######################################  ]  93%
+[######################################  ]  94%
+[####################################### ]  95%
+[####################################### ]  96%
+[####################################### ]  97%
+[########################################]  98%
+[########################################]  99%
+[########################################] 100%
+Copy complete, now saving to disk (please wait)...
+Copy complete.
+
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+n9k02# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'exit\n'

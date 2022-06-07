@@ -1,0 +1,201 @@
+---
+hosts:
+  - host: n9k01-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k02-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k03-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k04-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k05-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k06-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k07-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k08-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k09-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k10-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k11-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k12-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k13-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k14-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k15-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k16-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k17-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k18-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k19-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k20-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k21-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k22-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k23-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k24-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k25-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k26-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k27-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k28-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k29-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k30-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k31-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k32-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k33-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k34-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k35-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k36-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k37-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k38-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k39-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
+
+  - host: n9k40-leaf-sjc05
+    device_type: cisco_nxos_ssh
+    username: svc.dcmetroscript
+    password: Kp!@9z2@EdSp3F1p.^R
