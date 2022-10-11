@@ -1,0 +1,217 @@
+DEBUG:paramiko.transport:starting thread (client mode): 0x78ac4fa0
+DEBUG:paramiko.transport:starting thread (client mode): 0x78ac4d60
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.7.2
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.7.2
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-OpenSSH_8.3 PKIX[12.5.1]
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.3)
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-OpenSSH_8.3 PKIX[12.5.1]
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_8.3)
+DEBUG:paramiko.transport:kex algos:['curve25519-sha256', 'curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group16-sha512', 'diffie-hellman-group14-sha1', 'diffie-hellman-group14-sha256'] server key:['ssh-rsa', 'rsa-sha2-256'] client encrypt:['aes128-ctr', 'aes256-ctr', 'aes256-gcm@openssh.com', 'aes128-gcm@openssh.com'] server encrypt:['aes128-ctr', 'aes256-ctr', 'aes256-gcm@openssh.com', 'aes128-gcm@openssh.com'] client mac:['hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] server mac:['hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+DEBUG:paramiko.transport:Kex agreed: curve25519-sha256@libssh.org
+DEBUG:paramiko.transport:HostKey agreed: ssh-rsa
+DEBUG:paramiko.transport:Cipher agreed: aes128-ctr
+DEBUG:paramiko.transport:MAC agreed: hmac-sha2-256
+DEBUG:paramiko.transport:Compression agreed: none
+DEBUG:paramiko.transport:kex algos:['curve25519-sha256', 'curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group16-sha512', 'diffie-hellman-group14-sha1', 'diffie-hellman-group14-sha256'] server key:['ssh-rsa', 'rsa-sha2-256'] client encrypt:['aes128-ctr', 'aes256-ctr', 'aes256-gcm@openssh.com', 'aes128-gcm@openssh.com'] server encrypt:['aes128-ctr', 'aes256-ctr', 'aes256-gcm@openssh.com', 'aes128-gcm@openssh.com'] client mac:['hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] server mac:['hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+DEBUG:paramiko.transport:Kex agreed: curve25519-sha256@libssh.org
+DEBUG:paramiko.transport:HostKey agreed: ssh-rsa
+DEBUG:paramiko.transport:Cipher agreed: aes128-ctr
+DEBUG:paramiko.transport:MAC agreed: hmac-sha2-256
+DEBUG:paramiko.transport:Compression agreed: none
+DEBUG:paramiko.transport:kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for n9k33-leaf-eat1.net.vmware.com: b'823148bc8dbdc2b4cf8ff6cf1658aafa'
+DEBUG:paramiko.transport:kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for n9k34-leaf-eat1.net.vmware.com: b'0b6a472a7c671669bcef95d5baf44922'
+DEBUG:paramiko.transport:userauth is OK
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b'User Access Verification\n'
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+INFO:paramiko.transport:Auth banner: b'User Access Verification\n'
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:Received global request "hostkeys-00@openssh.com"
+DEBUG:paramiko.transport:Rejecting "hostkeys-00@openssh.com" global request from server.
+DEBUG:paramiko.transport:Received global request "hostkeys-00@openssh.com"
+DEBUG:paramiko.transport:Rejecting "hostkeys-00@openssh.com" global request from server.
+DEBUG:paramiko.transport:[chan 0] Max packet out: 32768 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Max packet out: 32768 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:read_channel: 
+**********************************************************************************
+*                 Welcome to Nexus (Nexus C93240YC-FX2)                          *
+*                       Hostname n9k33-leaf-eat1                                 *
+*                   Physical location POD 3 (IDF.1C05U26)                        *
+*                                                                                *
+*           This is a private system operated for and by VMWare Inc.             *
+*   Authorization from VMWare Inc. management is required to use this system.    *
+*                   Use by unauthorized persons is prohibited.                   *
+**********************************************************************************
+
+
+DEBUG:netmiko:read_channel: 
+**********************************************************************************
+*                 Welcome to Nexus (Nexus C93240YC-FX2)                          *
+*                       Hostname n9k34-leaf-eat1                                 *
+*                   Physical location POD 3 (IDF.1C10U22)                        *
+*                                                                                *
+*           This is a private system operated for and by VMWare Inc.             *
+*   Authorization from VMWare Inc. management is required to use this system.    *
+*                   Use by unauthorized persons is prohibited.                   *
+**********************************************************************************
+
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2022, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+n9k33-leaf-eat1# 
+DEBUG:netmiko:read_channel: Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2022, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+n9k34-leaf-eat1# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:Pattern is: terminal width 511
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:Pattern is: terminal width 511
+DEBUG:netmiko:_read_channel_expect read_data: terminal width 511
+
+DEBUG:netmiko:Pattern found: terminal width 511 terminal width 511
+
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:Pattern is: terminal\ length\ 0
+DEBUG:netmiko:_read_channel_expect read_data: terminal width 511
+
+DEBUG:netmiko:Pattern found: terminal width 511 terminal width 511
+
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:Pattern is: terminal\ length\ 0
+DEBUG:netmiko:_read_channel_expect read_data: n9k33-leaf-eat1# 
+DEBUG:netmiko:_read_channel_expect read_data: n9k34-leaf-eat1# 
+DEBUG:netmiko:_read_channel_expect read_data: terminal len
+DEBUG:netmiko:_read_channel_expect read_data: terminal length 0
+
+DEBUG:netmiko:Pattern found: terminal\ length\ 0 n9k34-leaf-eat1# terminal length 0
+
+DEBUG:netmiko:n9k34-leaf-eat1# terminal length 0
+
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:_read_channel_expect read_data: gth 0
+n9k33-leaf-eat1# 
+DEBUG:netmiko:Pattern found: terminal\ length\ 0 n9k33-leaf-eat1# terminal length 0
+n9k33-leaf-eat1# 
+DEBUG:netmiko:n9k33-leaf-eat1# terminal length 0
+n9k33-leaf-eat1# 
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: n9k34-leaf-eat1# 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+n9k33-leaf-eat1# 
+DEBUG:netmiko:read_channel: 
+n9k34-leaf-eat1# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is n9k33-leaf-eat1#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is n9k34-leaf-eat1#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+n9k33-leaf-eat1# 
+n9k33-leaf-eat1# 
+n9k33-leaf-eat1# 
+n9k33-leaf-eat1# 
+DEBUG:netmiko:read_channel: 
+n9k34-leaf-eat1# 
+n9k34-leaf-eat1# 
+n9k34-leaf-eat1# 
+n9k34-leaf-eat1# 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is n9k33-leaf-eat1#
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is n9k34-leaf-eat1#

@@ -1,0 +1,22 @@
+vlans:                                 
+    - Vlan618                                                        
+    - Vlan1509                              
+    - Vlan1522                              
+    - Vlan1900                              
+    - Vlan1901                              
+    - Vlan1904                              
+    - Vlan3001                              
+    - Vlan3837                                                           
+    - Vlan3838                              
+    - Vlan3860                                                          
+    - Vlan3861                              
+    - Vlan3862                                                         
+    - Vlan3863                              
+    - Vlan3864                                                          
+    - Vlan3870                              
+    - Vlan3871                                                           
+    - Vlan3882                                                          
+    - Vlan3883                              
+    - Vlan3896                              
+    - Vlan3926                              
+    - Vlan3933

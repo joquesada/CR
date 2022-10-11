@@ -1,0 +1,12 @@
+
+==================================================
+n9k33-leaf-eat1.net.vmware.com
+==================================================
+
+Conifguration is preparing for the Loopback10 with IP address 10.0.5.33
+
+==================================================
+n9k34-leaf-eat1.net.vmware.com
+==================================================
+
+Conifguration is preparing for the Loopback10 with IP address 10.0.5.34
