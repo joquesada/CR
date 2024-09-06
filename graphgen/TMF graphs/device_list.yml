@@ -1,0 +1,11 @@
+---
+hosts:
+  - host: 10.2.11.2
+    device_type: cisco_nxos_ssh
+    username:
+    password:
+
+  - host: 10.2.11.3
+    device_type: cisco_nxos_ssh
+    username:
+    password:
